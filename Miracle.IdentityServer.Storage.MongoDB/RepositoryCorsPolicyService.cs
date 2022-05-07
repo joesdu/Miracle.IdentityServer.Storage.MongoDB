@@ -1,7 +1,7 @@
 ﻿using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Services;
 
-namespace Duende.IdentityServer.Storage.MongoDB;
+namespace Miracle.IdentityServer.Storage.MongoDB;
 
 public class RepositoryCorsPolicyService : ICorsPolicyService
 {

@@ -4,7 +4,7 @@
 
 1. Install Package
 ```shell
-
+Install-Package Miracle.IdentityServer.Storage.MongoDB
 ```
 2. Add the following code to the Program.cs file in the root of the project
 ```csharp

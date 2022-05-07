@@ -1,7 +1,7 @@
 ﻿using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Stores;
 
-namespace Duende.IdentityServer.Storage.MongoDB;
+namespace Miracle.IdentityServer.Storage.MongoDB;
 internal class RepositoryClientStore : IClientStore
 {
     protected IRepository _repository;

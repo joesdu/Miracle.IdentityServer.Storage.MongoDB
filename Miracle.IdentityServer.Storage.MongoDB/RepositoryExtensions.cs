@@ -3,7 +3,7 @@ using Duende.IdentityServer.Stores;
 using Microsoft.Extensions.DependencyInjection;
 using Miracle.MongoDB;
 
-namespace Duende.IdentityServer.Storage.MongoDB;
+namespace Miracle.IdentityServer.Storage.MongoDB;
 
 public static class RepositoryExtensions
 {

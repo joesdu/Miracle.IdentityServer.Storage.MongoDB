@@ -1,7 +1,7 @@
 ﻿using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Stores;
 
-namespace Duende.IdentityServer.Storage.MongoDB;
+namespace Miracle.IdentityServer.Storage.MongoDB;
 
 public class RepositoryPersistedGrantStore : IPersistedGrantStore
 {

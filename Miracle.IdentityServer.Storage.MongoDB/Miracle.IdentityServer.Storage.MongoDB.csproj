@@ -7,13 +7,21 @@
 		<LangVersion>latest</LangVersion>
 		<Version>1.0.1</Version>
 		<Authors>joesdu</Authors>
-		<RepositoryUrl>https://github.com/joesdu/Duende.IdentityServer.Storage.MongoDB</RepositoryUrl>
-		<PackageProjectUrl>https://www.nuget.org/packages/Duende.IdentityServer.Storage.MongoDB</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/joesdu/Miracle.IdentityServer.Storage.MongoDB</RepositoryUrl>
+		<PackageProjectUrl>https://www.nuget.org/packages/Miracle.IdentityServer.Storage.MongoDB</PackageProjectUrl>
 		<Description>support identityserver 5.x-6.x data persistence to mongodb</Description>
-		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<PackageReadmeFile>../readme.md</PackageReadmeFile>
+		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\readme.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\LICENSE" Pack="true" PackagePath="" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Duende.IdentityServer" Version="6.0.4" />

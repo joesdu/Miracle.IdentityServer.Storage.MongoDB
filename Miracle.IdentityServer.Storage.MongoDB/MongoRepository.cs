@@ -2,7 +2,7 @@
 using MongoDB.Driver;
 using System.Linq.Expressions;
 
-namespace Duende.IdentityServer.Storage.MongoDB;
+namespace Miracle.IdentityServer.Storage.MongoDB;
 public class MongoRepository : IRepository
 {
     private readonly IMongoDatabase _database;

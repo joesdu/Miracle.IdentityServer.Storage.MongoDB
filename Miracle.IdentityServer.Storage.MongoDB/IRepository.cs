@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace Duende.IdentityServer.Storage.MongoDB;
+namespace Miracle.IdentityServer.Storage.MongoDB;
 public interface IRepository
 {
     IQueryable<T> All<T>() where T : class, new();
