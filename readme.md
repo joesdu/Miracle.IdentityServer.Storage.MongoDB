@@ -57,7 +57,7 @@ builder.Services.AddIdentityServer(options =>
 SeedDatabase.Seed(builder.Services);
 ```
 
-- add senddata class in your service project
+- add SeedDatabase class in your service project
 ```csharp
 public static void Seed(IServiceCollection services)
     {
