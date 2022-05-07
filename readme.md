@@ -31,9 +31,9 @@ var db = await builder.Services.AddMongoDbContext<BaseDbContext>(clientSettings:
 	// Add the database name for the IdentityServer data
     DatabaseName = "miracleidentityserver",
 	// your mongodb database username
-    UserName = "oneblogs",
+    UserName = "xxxxxx",
 	// your mongodb database password
-    Password = "&oneblogs.cn",
+    Password = "&xxxxxx",
 }, dboptions: dboptions);
 
 builder.Services.AddIdentityServer(options =>
