@@ -23,16 +23,16 @@ var db = await builder.Services.AddMongoDbContext<BaseDbContext>(clientSettings:
 {
     ServerAddresses = new()
     {
-		// Add the connection ip and port to the MongoDB server
+	// Add the connection ip and port to the MongoDB server
         new("192.168.2.10", 27017),
     },
-	// Add the auth database name
+    // Add the auth database name
     AuthDatabase = "admin",
-	// Add the database name for the IdentityServer data
+    // Add the database name for the IdentityServer data
     DatabaseName = "miracleidentityserver",
-	// your mongodb database username
+    // your mongodb database username
     UserName = "xxxxxx",
-	// your mongodb database password
+    // your mongodb database password
     Password = "&xxxxxx",
 }, dboptions: dboptions);
 
