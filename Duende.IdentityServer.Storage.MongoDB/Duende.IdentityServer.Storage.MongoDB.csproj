@@ -12,7 +12,7 @@
 		<Description>support identityserver 5.x-6.x data persistence to mongodb</Description>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReadmeFile>../readme.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
