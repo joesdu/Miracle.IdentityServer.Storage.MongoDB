@@ -56,3 +56,47 @@ builder.Services.AddIdentityServer(options =>
 // Create initial resources from Identity Default Config.cs
 SeedDatabase.Seed(builder.Services);
 ```
+
+- add senddata class in your service project
+```csharp
+public static void Seed(IServiceCollection services)
+    {
+        var sp = services.BuildServiceProvider();
+        var repository = sp.GetService<IRepository>()!;
+        if (repository?.All<Client>().Count() == 0)
+        {
+            foreach (var client in IdentityConfig.GetClients())
+            {
+                repository.Add(client);
+            }
+        }
+        if (repository?.All<ApiScope>().Count() == 0)
+        {
+            foreach (var scopes in IdentityConfig.GetApiScopes())
+            {
+                repository.Add(scopes);
+            }
+        }
+        if (repository?.All<IdentityResource>().Count() == 0)
+        {
+            foreach (var resource in IdentityConfig.GetIdentityResources())
+            {
+                repository.Add(resource);
+            }
+        }
+        if (repository?.All<ApiResource>().Count() == 0)
+        {
+            foreach (var api in IdentityConfig.GetApiResources())
+            {
+                repository.Add(api);
+            }
+        }
+        if (repository?.All<TestUser>().Count() == 0)
+        {
+            foreach (var user in TestUsers.Users)
+            {
+                repository.Add(user);
+            }
+        }
+    }
+```
