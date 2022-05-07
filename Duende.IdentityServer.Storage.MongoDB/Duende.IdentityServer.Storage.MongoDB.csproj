@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<Version>1.0.1</Version>
+		<Authors>joesdu</Authors>
+		<RepositoryUrl>https://github.com/joesdu/Duende.IdentityServer.Storage.MongoDB</RepositoryUrl>
+		<PackageProjectUrl>https://www.nuget.org/packages/Duende.IdentityServer.Storage.MongoDB</PackageProjectUrl>
+		<Description>support identityserver 5.x-6.x data persistence to mongodb</Description>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Duende.IdentityServer" Version="6.0.4" />
+		<PackageReference Include="Miracle.MongoDB" Version="2.0.0" />
+	</ItemGroup>
+
+</Project>
